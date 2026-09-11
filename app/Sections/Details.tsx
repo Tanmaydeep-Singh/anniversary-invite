@@ -1,6 +1,6 @@
 export default function Details() {
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-[var(--color-obsidian)] px-6 py-24 text-[var(--color-ivory)]">
+    <section className="relative min-h-[100svh] overflow-hidden  px-6 py-24 text-[var(--color-ivory)]">
       <div className="mx-auto flex min-h-[calc(100svh-12rem)] w-full max-w-md flex-col items-center text-center">
 
         {/* Section label */}

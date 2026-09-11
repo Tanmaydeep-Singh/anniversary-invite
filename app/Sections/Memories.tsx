@@ -38,7 +38,7 @@ export default function Memories() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-obsidian)] px-5 py-28 text-[var(--color-ivory)]">
+    <section className="relative overflow-hidden px-5 py-28 text-[var(--color-ivory)]">
       <div className="mx-auto w-full max-w-md">
 
         {/* Header */}

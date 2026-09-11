@@ -36,7 +36,7 @@ function CountdownBox({
   label: string;
 }) {
   return (
-    <div className="flex aspect-square w-[8.5rem] flex-col items-center justify-center rounded-[1.5rem] border border-[var(--color-champagne)]/35 bg-[var(--color-obsidian)] sm:w-[9.5rem]">
+    <div className="flex aspect-square w-[8.5rem] flex-col items-center justify-center rounded-[1.5rem] border border-[var(--color-champagne)]/35 sm:w-[9.5rem]">
       <span className="font-sans text-[2.5rem] font-light leading-none tracking-[-0.04em] text-[var(--color-ivory)] sm:text-[3rem]">
         {String(value).padStart(2, "0")}
       </span>
@@ -60,7 +60,7 @@ export default function SaveTheDate() {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-[var(--color-obsidian)] px-5 py-24 text-[var(--color-ivory)]">
+    <section className="relative min-h-[100svh] overflow-hidden px-5 py-24 text-[var(--color-ivory)]">
       <div className="mx-auto flex min-h-[calc(100svh-12rem)] w-full max-w-md flex-col items-center">
 
         {/* Section label */}

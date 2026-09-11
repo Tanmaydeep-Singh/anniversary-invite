@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-obsidian)] px-6 pb-12 pt-20 text-[var(--color-ivory)]">
+    <footer className=" px-6 pb-12 pt-20 text-[var(--color-ivory)]">
       <div className="mx-auto flex w-full max-w-md flex-col items-center text-center">
 
         {/* Names */}
