@@ -131,21 +131,21 @@ export default function BotanicalBackground() {
       aria-hidden="true"
     >
       {/* Lotus */}
-      <img
-        src="/images/lotus/lotus.png"
-        alt=""
-        className="
-          absolute
-          right-[-3rem]
-          top-[7vh]
-          w-[15rem]
-          opacity-90
-
-          sm:right-[-1rem]
-          sm:top-[8vh]
-          sm:w-[18rem]
-        "
-      />
+<img
+  src="/images/lotus/lotus.png"
+  alt=""
+  className="
+    absolute
+    right-[1rem]
+    top-[7vh]
+    w-[12rem]
+    opacity-90
+    sm:right-[2rem]
+    sm:top-[8vh]
+    sm:w-[15rem]
+    rotate-30
+  "
+/>
 
       {/* Petals */}
       {PETALS.map((petal) => (

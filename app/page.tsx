@@ -12,6 +12,7 @@ import SaveTheDate from "./Sections/SaveTheDate";
 import Details from "./Sections/Details";
 import Memories from "./Sections/Memories";
 import BotanicalBackground from "./Sections/BotanicalBackground";
+import Welcome from "./Sections/Welcome";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -97,6 +98,12 @@ export default function Home() {
         <section className="home-section">
           <div className="section-content">
             <Hero />
+          </div>
+        </section>
+
+        <section className="home-section">
+          <div className="section-content">
+            <Welcome />
           </div>
         </section>
 
