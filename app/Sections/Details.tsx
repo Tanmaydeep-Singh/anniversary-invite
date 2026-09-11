@@ -46,7 +46,7 @@ export default function Details() {
             y: 35,
             opacity: 0,
             filter: "blur(7px)",
-            duration: 0.9,
+            duration: 0.5,
             stagger: 0.18,
             ease: "power3.out",
           },

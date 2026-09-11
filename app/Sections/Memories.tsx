@@ -84,7 +84,7 @@ export default function Memories() {
             y: 20,
             opacity: 0,
             filter: "blur(6px)",
-            duration: 0.9,
+            duration: 0.5,
             ease: "power3.out",
           },
           "-=0.5",
