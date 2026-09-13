@@ -12,12 +12,12 @@ export default function Memories() {
 
   const memories = [
     {
-      src: "/images/memory-1.jpg",
+      src: "/images/memory-1.jpeg",
       alt: "A cherished memory",
       className: "col-span-2 aspect-[16/10]",
     },
     {
-      src: "/images/memory-2.jpg",
+      src: "/images/memory-6.jpeg",
       alt: "A cherished memory",
       className: "col-span-1 aspect-[4/5]",
     },
@@ -27,22 +27,22 @@ export default function Memories() {
       className: "col-span-1 mt-10 aspect-[4/5]",
     },
     {
-      src: "/images/memory-4.jpg",
+      src: "/images/memory-4.png",
       alt: "A cherished memory",
       className: "col-span-2 aspect-[16/11]",
     },
     {
-      src: "/images/memory-5.jpg",
+      src: "/images/memory-5.JPG",
       alt: "A cherished memory",
       className: "col-span-1 aspect-[3/4]",
     },
     {
-      src: "/images/memory-6.jpg",
+      src: "/images/memory-2.jpg",
       alt: "A cherished memory",
       className: "col-span-1 mt-12 aspect-[3/4]",
     },
     {
-      src: "/images/memory-7.jpg",
+      src: "/images/memory-7.png",
       alt: "A cherished memory",
       className: "col-span-2 aspect-[16/9]",
     },
