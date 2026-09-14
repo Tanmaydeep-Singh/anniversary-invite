@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     description:
       "A quarter of a century. A thousand little moments. One beautiful journey.",
 
-    url: "https://YOUR-DOMAIN.com",
+    url: "https://aquartercentury.vercel.app",
 
     siteName: "Sukhwant Singh & Harjeet Kaur — 25 Years Together",
 
     images: [
       {
-        url: "https://YOUR-DOMAIN.com/images/share/anniversary-cover.png",
+        url: "https://aquartercentury.vercel.app/share/anniversary-25.jpg",
         width: 1200,
         height: 630,
         alt: "Sukhwant Singh & Harjeet Kaur — 25 Years Together",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "A quarter of a century. A thousand little moments. One beautiful journey.",
 
     images: [
-      "https://YOUR-DOMAIN.com/images/share/anniversary-cover.png",
+      "https://aquartercentury.vercel.app/share/anniversary-25.jpg",
     ],
   },
 };
