@@ -60,3 +60,16 @@ section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+@keyframes scrollLine {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(250%);
+  }
+}

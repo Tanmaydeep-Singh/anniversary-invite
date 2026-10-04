@@ -38,10 +38,9 @@ export default function Hero() {
           "-=0.75",
         )
 
-        // Small breathing space
         .to({}, { duration: 0.35 })
 
-        // "Celebrating"
+        // Celebrating
         .from(".hero-celebrating", {
           y: 18,
           opacity: 0,
@@ -49,7 +48,7 @@ export default function Hero() {
           duration: 0.8,
         })
 
-        // 25 — main visual moment
+        // 25
         .from(
           ".hero-number",
           {
@@ -58,7 +57,6 @@ export default function Hero() {
             scale: 0.92,
             filter: "blur(10px)",
             duration: 1.1,
-            ease: "power3.out",
           },
           "-=0.35",
         )
@@ -73,10 +71,27 @@ export default function Hero() {
             duration: 0.75,
           },
           "-=0.55",
+        )
+
+        // Scroll indicator
+        .from(
+          ".scroll-indicator",
+          {
+            opacity: 0,
+            y: 10,
+            duration: 0.8,
+          },
+          "-=0.2",
         );
     },
     { scope: container },
   );
+
+  const scrollToNext = () => {
+    document.getElementById("details")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   return (
     <section
@@ -103,7 +118,6 @@ export default function Hero() {
 
           {/* Anniversary */}
           <div className="mt-[6vh] font-sans">
-
             <span className="hero-celebrating block text-[0.6rem] font-normal uppercase tracking-[0.4em] sm:text-[0.7rem] sm:tracking-[0.42em]">
               Celebrating
             </span>
@@ -115,11 +129,24 @@ export default function Hero() {
             <span className="hero-years mt-1.5 block text-[0.66rem] font-normal uppercase tracking-[0.4em] sm:mt-2 sm:text-[0.74rem] sm:tracking-[0.42em]">
               Years
             </span>
-
           </div>
-
         </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <button
+        onClick={scrollToNext}
+        aria-label="Scroll to next section"
+        className="scroll-indicator absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3 text-[var(--color-champagne)]"
+      >
+        <span className="font-sans text-[0.58rem] uppercase tracking-[0.35em] opacity-80">
+          Scroll
+        </span>
+
+        <span className="relative h-10 w-px overflow-hidden bg-[var(--color-champagne)]/30">
+          <span className="absolute left-0 top-0 h-4 w-full animate-[scrollLine_1.8s_ease-in-out_infinite] bg-[var(--color-champagne)]" />
+        </span>
+      </button>
     </section>
   );
 }
