@@ -98,24 +98,36 @@ export default function Details() {
             </p>
 
             <p className="mt-4 font-sans text-[1.8rem] font-light tracking-[0.02em]">
-              5:00 PM
+              7:00 PM
             </p>
           </div>
 
           {/* Location */}
-          <div className="detail-item border-y border-[var(--color-champagne)]/30 py-8">
-            <p className="font-sans text-[0.68rem] uppercase tracking-[0.4em] text-[var(--color-champagne)]">
-              Location
-            </p>
+<div
+  className="detail-item border-y border-[var(--color-champagne)]/30 py-8 cursor-pointer group"
+  onClick={() =>
+    window.open(
+      "https://www.google.com/maps/search/?api=1&query=Hariyali+Resort+Kota",
+      "_blank"
+    )
+  }
+>
+  <p className="font-sans text-[0.68rem] uppercase tracking-[0.4em] text-[var(--color-champagne)]">
+    Location
+  </p>
 
-            <p className="mt-4 font-sans text-[1.5rem] font-light tracking-[-0.02em]">
-              Your Venue
-            </p>
+  <p className="mt-4 font-sans text-[1.5rem] font-light tracking-[-0.02em] group-hover:text-[var(--color-champagne)] transition-colors">
+    Hariyali Resort
+  </p>
 
-            <p className="mt-2 font-display text-[1.15rem] italic text-[var(--color-silver)]">
-              Your City
-            </p>
-          </div>
+  <p className="mt-2 font-display text-[1.15rem] italic text-[var(--color-silver)]">
+    Kota
+  </p>
+
+  <p className="mt-4 font-sans text-[0.65rem] uppercase tracking-[0.25em] text-[var(--color-silver)] opacity-60 group-hover:opacity-100 transition-opacity">
+    Tap to open map →
+  </p>
+</div>
 
         </div>
       </div>
